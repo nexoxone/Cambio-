@@ -1,0 +1,12 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 100%; height: 100%; background: #000; overflow: hidden; font-family: system-ui, sans-serif; color: #fff; }
+#scene { position: fixed; inset: 0; width: 100%; height: 100%; }
+#cam { display: none; }
+#preview {
+  position: fixed; left: 16px; bottom: 16px; width: 240px; height: 180px;
+  border: 1px solid rgba(255,255,255,.25); border-radius: 12px; transform: scaleX(-1);
+  background: #111;
+}
+#hud { position: fixed; top: 16px; left: 16px; right: 16px; pointer-events: none; }
+#gesto { font-size: 22px; font-weight: 600; text-shadow: 0 0 12px rgba(120,200,255,.8); }
+#ayuda { margin-top: 8px; font-size: 13px; opacity: .65; line-height: 1.6; }

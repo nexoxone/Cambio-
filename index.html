@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Partículas con gestos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="scene"></canvas>
+  <div id="hud">
+    <div id="gesto">Muestra tu mano a la cámara</div>
+    <div id="ayuda">
+      ✊ esfera roja · ☝️ planeta con anillos · ✌️ banda cian · 🤟 "I LOVE YOU" · 🖖 corazón · 🖐️ galaxia azul<br>
+      Mueve la mano para girar · acerca/aleja para hacer zoom
+    </div>
+  </div>
+  <video id="cam" playsinline muted></video>
+  <canvas id="preview" width="320" height="240"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3.1675466862/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1675469240/hands.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
